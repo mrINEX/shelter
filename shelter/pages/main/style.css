@@ -177,3 +177,144 @@
   color: #4C4C4C;
   margin: 25px 0;
 }
+
+.pets-screen {
+  height: 877px;
+  background: #F6F6F6;
+  display: flex;
+  align-items: center;
+}
+
+.pets-screen .pets {
+  height: 697px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pets .pets-title {
+  width: 400px;
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #545454;
+  position: relative;
+  bottom: 69px;
+}
+
+.pets-button {
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #292929;
+  width: 261px;
+  height: 52px;
+  background: #F1CDB3;
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  top: 50px;
+}
+
+.pets-cards {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pets-arraw-left {
+  background-image: url('../../assets/image/Arrow-left.png');
+}
+
+.pets-arraw-right {
+  background-image: url('../../assets/image/Arrow-right.png');
+}
+
+.pets-arraw-left,
+.pets-arraw-right {
+  width: 52px;
+  height: 52px;
+  border: 2px solid #F1CDB3;
+  border-radius: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  background-color: #F6F6F6;
+  position: relative;
+  bottom: 10px;
+}
+
+.pet-card {
+  width: 270px;
+  height: 435px;
+  background: #FAFAFA;
+  border-radius: 9px;
+  position: relative;
+  bottom: 10px;
+}
+
+.pet-card-photo {
+  width: 270px;
+  height: 270px;
+  border-radius: 9px 9px 0px 0px;
+}
+
+.pet-card-name {
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.06em;
+  color: #545454;
+  position: relative;
+  top: 30px;
+}
+
+.pet-card-button {
+  width: 187px;
+  height: 52px;
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #292929;
+  border: 2px solid #F1CDB3;
+  border-radius: 100px;
+  background: #FAFAFA;
+  position: relative;
+  top: 60px;
+}
+
+.katrine {
+  background-image: url('../../assets/image/pets-katrine.png');
+  background-size: 298px;
+  background-position-x: -22px;
+  background-position-y: -11px;
+}
+
+.jennifer {
+  background-image: url('../../assets/image/pets-jennifer.png');
+  background-position-x: -13px;
+  background-position-y: -9px;
+  background-size: 281px;
+}
+
+.woody {
+  background-image: url('../../assets/image/pets-woody.png');
+  background-position-x: -27px;
+  background-size: 293px;
+  background-position-y: -16px;
+}
