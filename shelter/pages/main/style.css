@@ -1,4 +1,4 @@
-body {
+* {
   margin: 0;
   padding: 0;
 }
@@ -92,6 +92,7 @@ body {
   color: #FFFFFF;
   width: 310px;
   line-height: 130%;
+  margin: 37px 0;
 }
 
 .start-screen-content-descriptions .description {
@@ -123,6 +124,56 @@ body {
 .start-screen-content-image {
   width: 698px;
   height: 728px;
-  background: gold;
   background: url('../../assets/image/start-screen-puppy.png');
+}
+
+.about-screen {
+  height: 588px;
+  display: flex;
+  align-items: center;
+}
+
+.about-screen .about {
+  height: 408px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.about .about-pets {
+  width: 300px;
+  height: 408px;
+  background: url('../../assets/image/about-pets.png');
+  position: relative;
+  top: -10px;
+  left: 17px;
+}
+
+.about .about-text {
+  width: 430px;
+  height: 380px;
+  position: relative;
+  right: 18px;
+}
+
+.about-text-title {
+  width: 370px;
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #545454;
+  margin: 5px 0;
+}
+
+.about-text-first-subtitle,
+.about-text-second-subtitle {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 160%;
+  color: #4C4C4C;
+  margin: 25px 0;
 }
