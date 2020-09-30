@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 1280px;
+}
+
+.wrapper-inner {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.start-screen {
+  height: 908px;
+  background: radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+  background-image: url('../../assets/image/start-screen-background.jpg');
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 0 69px;
+}
+
+.header-logo {
+  text-align: center;
+}
+
+.header-logo-title {
+  color: #F1CDB3;
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  letter-spacing: 0.06em;
+}
+
+.header-logo-subtitle {
+  color: #FFFFFF;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  position: relative;
+  top: 9px;
+}
+
+.header-nav {
+  width: 443px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 8px;
+}
+
+.active {
+  border-bottom: 3px solid #F1CDB3;
+  position: relative;
+  top: 1px;
+}
+
+.header-nav-link {
+  text-decoration: none;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  color: #CDCDCD;
+  height: 21px;
+}
+
+.start-screen-content {
+  height: 728px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.start-screen-content-descriptions {
+  width: 460px;
+  position: relative;
+  top: 127px;
+}
+
+.start-screen-content-descriptions .title {
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 44px;
+  color: #FFFFFF;
+  width: 310px;
+  line-height: 130%;
+}
+
+.start-screen-content-descriptions .description {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  color: #CDCDCD;
+  line-height: 160%;
+  margin: 41px 0 41px;
+}
+
+.start-screen-content-descriptions .button {
+  width: 207px;
+  height: 52px;
+  background: #F1CDB3;
+  border-radius: 100px;
+
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  color: #292929;
+  letter-spacing: 0.06em;
+  border: none;
+  cursor: pointer;
+}
+
+.start-screen-content-image {
+  width: 698px;
+  height: 728px;
+  background: gold;
+  background: url('../../assets/image/start-screen-puppy.png');
+}
