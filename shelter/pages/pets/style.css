@@ -74,8 +74,58 @@
   height: 21px;
 }
 
+.checkbox-toggle {
+  font-size: 34px;
+}
+
+.checkbox-toggle,
+#checkbox-menu {
+  display: none;
+}
+
+#checkbox-menu:checked + label {
+  position: absolute;
+  right: 0;
+  flex-direction: column;
+  width: 100%;
+  background: #e5e1e1;
+}
+#checkbox-menu:checked + label .header-nav-link {
+  display: block;
+}
+
 @media screen and (max-width: 768px) {
-  .wrapper-inner {
+  .wrapper {
     width: 768px;
+  }
+
+  .wrapper-inner {
+    width: 708px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .wrapper {
+    width: 320px;
+  }
+  
+  .wrapper-inner {
+    width: 300px;
+  }
+
+  .header-nav-link {
+    display: none;
+  }
+
+  .checkbox-toggle {
+    display: block;
+  }
+
+  .header-nav {
+    width: 66px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
   }
 }
