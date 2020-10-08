@@ -121,6 +121,10 @@
   cursor: pointer;
 }
 
+.start-screen-content-descriptions .button:hover {
+  background: #FDDCC4;
+}
+
 .start-screen-content-image {
   width: 698px;
   height: 728px;
@@ -225,6 +229,10 @@
   top: 50px;
 }
 
+.pets-button:hover {
+  background: #FDDCC4;
+}
+
 .pets-cards {
   width: 100%;
   display: flex;
@@ -254,6 +262,14 @@
   bottom: 10px;
 }
 
+.pets-arraw-left:hover {
+  background-color: #FDDCC4;
+}
+
+.pets-arraw-right:hover {
+  background-color: #FDDCC4;
+}
+
 .pet-card {
   width: 270px;
   height: 435px;
@@ -261,6 +277,7 @@
   border-radius: 9px;
   position: relative;
   bottom: 10px;
+  cursor: pointer;
 }
 
 .pet-card-photo {
@@ -297,6 +314,10 @@
   position: relative;
   top: 60px;
   cursor: pointer;
+}
+
+.pet-card-button:hover {
+  background: #FDDCC4;
 }
 
 .katrine {
@@ -608,4 +629,8 @@
   background-image: url('../../assets/image/footer-puppy.png');
   position: relative;
   bottom: 20px;
+}
+
+.pet-card:hover {
+  background: white;
 }

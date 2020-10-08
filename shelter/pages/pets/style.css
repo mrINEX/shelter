@@ -175,6 +175,7 @@
   height: 435px;
   background: #FAFAFA;
   border-radius: 9px;
+  cursor: pointer;
 }
 
 .pet-card-photo {
@@ -211,6 +212,10 @@
   position: relative;
   top: 60px;
   cursor: pointer;
+}
+
+.pet-card-button:hover {
+  background: #FDDCC4;
 }
 
 .katrine {
@@ -486,4 +491,8 @@
     padding-right: 0;
     text-align: center;
   }
+}
+
+.pet-card:hover {
+  background: white;
 }
