@@ -167,7 +167,6 @@
   width: 100%;
   grid-column-gap: 40px;
   padding-top: 27px;
-  grid-template-rows: 1fr 1fr;
 }
 
 .pet-card {
@@ -280,4 +279,59 @@
 
 .page-number {
   background: #F1CDB3;
+}
+
+@media screen and (max-width: 768px) {
+
+  .main {
+    height: 1733px;
+  }
+  
+  .pets {
+    top: 60px;
+    height: 1603px;
+  }
+
+  .pets .pets-container {
+    height: 1365px;
+    width: 580px;
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 30px;
+    padding-top: 40px;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .main {
+    height: 1630px;
+  }
+  
+  .pets {
+    top: 40px;
+    height: 1560px;
+  }
+
+  .pets .pets-container {
+    width: 271px;
+    height: 1365px;
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr;
+    grid-row-gap: 30px;
+    padding-top: 40px;
+    overflow: hidden;
+  }
+
+  .main-pets-title {
+    width: 300px;
+    font-size: 25px;
+  }
+
+  .pets-navigation {
+    width: 300px;
+    height: 52px;
+  }
 }
