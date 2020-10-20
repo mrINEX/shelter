@@ -640,3 +640,49 @@ body {
 .pet-card:hover {
   background: white;
 }
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    width: 768px;
+  }
+  
+  .wrapper-inner {
+    width: 708px;
+  }
+
+  .header {
+    padding: 30px 0 39px;
+  }
+
+  .start-screen {
+    height: 1165px;
+    background-size: cover;
+  }
+
+  .start-screen-content {
+    height: 1045px;
+    flex-direction: column;
+  }
+
+  .start-screen-content-descriptions {
+    position: initial;
+    width: 460px;
+    height: 322px;
+    margin: 0 auto;
+  }
+
+  .wrapper-button {
+    text-align: center;
+  }
+
+  .start-screen-content-image {
+    width: 569px;
+    height: 593px;
+    background-size: cover;
+  }
+
+  .wrapper-content-image {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
