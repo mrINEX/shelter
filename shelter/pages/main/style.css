@@ -298,7 +298,7 @@ body {
 }
 
 .pets-arraw-left {
-  margin-right: -11px;
+  /* margin-right: -11px; */
   background-image: url('../../assets/image/Arrow-left.png');
 }
 
@@ -422,9 +422,13 @@ body {
 }
 
 .help .help-list {
-  width: 1026px;
-  height: 281px;
-  margin: 60px auto;
+  margin-top: 3.7rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  column-gap: 7.5rem;
+  row-gap: 3.4rem;
 }
 
 .help-list-one {
@@ -758,6 +762,26 @@ body {
     cursor: pointer;
     margin: 0 21px;
   }
+
+  .pets-arraw-left {
+    margin-right: -11px;
+  }
+
+  .help-screen {
+    height: 779px;
+  }
+
+  .help-screen .help {
+    height: 599px;
+  }
+
+  .help .help-list {
+    margin-top: 3.7rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2px;
+    grid-row-gap: 53px;
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -845,12 +869,77 @@ body {
     font-family: Georgia;
     font-size: 25px;
     text-align: center;
-    /* margin: 5px 0; */
   }
   
   .about-text-first-subtitle,
   .about-text-second-subtitle {
     text-align: justify;
-    /* margin: 25px 0; */
+  }
+
+  .pets .pets-title {
+    width: initial;
+    font-size: 25px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #545454;
+  }
+
+  .pet-card {
+    margin: 0 15px;
+  }
+
+  .pets-cards {
+    height: 507px;
+    display: block;
+    position: relative;
+  }
+
+  .pets-arraw-left, .pets-arraw-right {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .pets-arraw-left {
+    left: 58px;
+  }
+
+  .pets-arraw-right {
+    right: 58px;
+  }
+
+  .help-screen {
+    height: 745px;
+  }
+
+  .help-screen .help {
+    padding: 42px 0 0 0;
+  }
+
+  .help .help-list {
+    margin-top: 49px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2px;
+    grid-row-gap: 25px;
+  }
+
+  .help .help-title {
+    width: 220px;
+    font-size: 25px;
+  }
+
+  .help-item {
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+  }
+
+  .help-text {
+    font-size: 15px;
+    line-height: 110%;
+  }
+
+  .help-list-item {
+    height: 87px;
   }
 }
