@@ -589,7 +589,7 @@ body {
   line-height: 18px;
   color: #B2B2B2;
 }
-
+/*  */
 .footer-screen {
   height: 350px;
   background-image: url('../../assets/image/footer-background.png');
@@ -799,6 +799,27 @@ body {
 
   .donation-descriptions {
     position: initial;
+  }
+
+  .footer-screen {
+    height: 639px;
+    background: url('../../assets/image/footer-background.png'), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+    background-size: cover;
+    position: relative;
+  }
+
+  .footer-image {
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 300px/2);
+  }
+
+  .footer-contacts {
+    padding-left: 34px;
+  }
+
+  .footer-location {
+    padding-right: 34px;
   }
 }
 
@@ -1011,5 +1032,27 @@ body {
   .donation-descriptions-content {
     width: 280px;
     text-align: justify;
+  }
+
+  .footer-screen {
+    height: 943px;
+    background: radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+  }
+
+  .footer-screen .footer {
+    height: 558px;
+    flex-direction: column;
+    padding-top: 30px;
+  }
+
+  .footer-contacts {
+    padding-left: 0;
+    text-align: center;
+    align-self: center;
+  }
+
+  .footer-location {
+    padding-right: 0;
+    text-align: center;
   }
 }
