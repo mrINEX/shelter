@@ -10,16 +10,18 @@
   <header class="header wrapper">
     <nav class="layout-flex-between wrapper-inner">
       <div class="header-logo">
-        <div class="biggest-title-fonts">Cozy House</div>
-        <div class="header-logo-subtitle">Shelter for pets in Boston</div>
+        <a href="../main/index.html" style="text-decoration: none;">
+          <div class="biggest-title-fonts">Cozy House</div>
+          <div class="header-logo-subtitle">Shelter for pets in Boston</div>
+        </a>
       </div>
       <input type="checkbox" id="checkbox-menu">
       <label for="checkbox-menu" class="header-nav">
         <div class="checkbox-toggle">&#9776;</div>
         <a class="header-nav-link" href="../main/index.html">About the shelter</a>
-        <a class="header-nav-link active" href="index.html">Our pets</a>
-        <a class="header-nav-link" href="">Help the shelter</a>
-        <a class="header-nav-link" href="">Contacts</a>
+        <a class="header-nav-link active">Our pets</a>
+        <a class="header-nav-link">Help the shelter</a>
+        <a class="header-nav-link">Contacts</a>
       </label>
     </nav>
   </header>
@@ -69,11 +71,11 @@
         </div>
       </div>
       <div class="pets-navigation">
-        <button class="round-button not-active arrows"><<</button>
-        <button class="round-button not-active arrows"><</button>
+        <button class="round-button arrows"><<</button>
+        <button class="round-button arrows"><</button>
         <button class="round-button arrows page-number">1</button>
-        <button class="round-button arrows">></button>
-        <button class="round-button arrows">>></button>
+        <button class="round-button active arrows">></button>
+        <button class="round-button active arrows">>></button>
       </div>
     </div>
   </main>
@@ -104,5 +106,6 @@
       <div class="footer-image"></div>
     </div>
   </footer>
+  <script src="./script.js"></script>
 </body>
 </html>

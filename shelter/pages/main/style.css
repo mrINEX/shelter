@@ -32,6 +32,7 @@ body {
 
 .header-logo {
   text-align: center;
+  cursor: pointer;
 }
 
 .header-logo-title {
@@ -75,11 +76,16 @@ body {
 .checkbox-toggle {
   position: absolute;
   right: 44px;
+  transition: all 0.5s ease-out;
+  top: 33px;
 }
 
+@keyframes ss { from { right: 44px; } to { right: 44px; }  }
 #checkbox-menu:checked + label .checkbox-toggle {
   transform: rotate(90deg);
   top: 36px;
+  right: 44px;
+  animation: .5s ss;
 }
 
 #checkbox-menu:checked + label .header-nav-link {
@@ -92,6 +98,7 @@ body {
   margin-top: 40px;
 }
 
+@keyframes slidein { from { left: 100%; } to { left: 0%; }  }
 #checkbox-menu:checked + label {
   position: absolute;
   width: 100%;
@@ -102,6 +109,12 @@ body {
   justify-content: center;
   align-items: center;
   padding-top: 8px;
+  animation: .5s slidein;
+}
+
+@keyframes slideout { from { left: 0%; } to { left: 100%; }  }
+#checkbox-menu + label {
+  animation: 3s slideout;
 }
 
 .active {
@@ -118,6 +131,7 @@ body {
   font-size: 15px;
   color: #CDCDCD;
   height: 21px;
+  cursor: pointer;
 }
 
 .start-screen-content {
@@ -336,6 +350,7 @@ body {
   border-radius: 9px;
   cursor: pointer;
   margin: 0 45px;
+  position: relative;
 }
 
 .pet-card-photo {
@@ -851,6 +866,7 @@ body {
     align-items: center;
     flex-direction: column;
     padding-top: 8px;
+    transition: all 0.5s ease-out;
   }
 
   .start-screen-content {
@@ -1055,4 +1071,30 @@ body {
     padding-right: 0;
     text-align: center;
   }
+}
+
+.popup {
+  position: fixed;
+  z-index: 15;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(41, 41, 41, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  width: 900px;
+  height: 500px;
+  box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+  background: #FAFAFA;
+  border-radius: 9px;
+  /* flex-shrink: 0; */
+}
+
+.hidden {
+  display: none;
 }

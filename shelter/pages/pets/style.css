@@ -43,6 +43,7 @@ body {
   font-weight: normal;
   font-size: 32px;
   letter-spacing: 0.06em;
+  /* text-decoration: none; */
 }
 
 .header-logo-subtitle {
@@ -78,6 +79,7 @@ body {
   font-size: 15px;
   color: #545454;
   height: 21px;
+  cursor: pointer;
 }
 
 .checkbox-toggle {
@@ -266,12 +268,14 @@ body {
 .round-button {
   width: 52px;
   height: 52px;
-  border: 2px solid #F1CDB3;
+  border: 2px solid #CDCDCD;
   border-radius: 100%;
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+  color: #CDCDCD;
   background-color: #F6F6F6;
+  color: #CDCDCD;
 }
 
 .arrows {
@@ -281,12 +285,20 @@ body {
   font-size: 21px;
   line-height: 115%;
   letter-spacing: 0.06em;
+  
+}
+
+.page-number {
   color: #292929;
 }
 
-.not-active {
-  border: 2px solid #CDCDCD;
-  color: #CDCDCD;
+.active {
+  border-bottom: 2px solid #F1CDB3;
+  color: #292929;
+}
+
+.active:hover {
+  background: #FDDCC4;
 }
 
 .page-number {
