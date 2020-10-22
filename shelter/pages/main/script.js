@@ -97,7 +97,6 @@ const shuffle = () => {
   })
 }
 
-console.log(pets);
 const left = document.querySelector('.pets-arraw-left');
 const right = document.querySelector('.pets-arraw-right');
 const slider = document.querySelector('.pets-cards-content');
