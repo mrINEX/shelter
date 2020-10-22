@@ -87,23 +87,7 @@ const pets = [
     "diseases": ["none"],
     "parasites": ["none"]
   }
-]
-
-const createElement = (type, attributes = {}, styles = {}) => {
-  const elem = document.createElement(type);
-  Object.keys(attributes).forEach(key => {
-      if (key === "classList") {
-          elem.classList.add(...attributes[key]);
-      } else {
-          elem[key] = attributes[key]
-      }
-  });
-  Object.keys(styles).forEach(key => {
-      console.log(key);
-      elem.style[key] = styles[key];
-  });
-  return elem;
-};
+];
 
 const shuffle = () => {
   const arr = [...slider.children].slice().sort(() => Math.random() - 0.5);
@@ -113,7 +97,6 @@ const shuffle = () => {
   })
 }
 
-// 360px card for 1280px width
 console.log(pets);
 const left = document.querySelector('.pets-arraw-left');
 const right = document.querySelector('.pets-arraw-right');
@@ -121,9 +104,52 @@ const slider = document.querySelector('.pets-cards-content');
 const popup = document.querySelector('.popup');
 const petsElements = document.querySelectorAll('.pet-card');
 
-slider.addEventListener('click', ({target}) => {
-  console.log(typeof petsElements);
+// popup
+const imageElement = document.querySelector('.popup-content-image');
+
+const titleElement = document.querySelector('.popup-title');
+const typeElement = document.querySelector('.popup-type');
+const breedElement = document.querySelector('.popup-breed');
+const detailsElement = document.querySelector('.popup-details');
+
+const ageElement = document.querySelector('.popup-age');
+const inoculationsElement = document.querySelector('.popup-inoculations');
+const diseasesElement = document.querySelector('.popup-diseases');
+const parasitesElement = document.querySelector('.popup-parasites');
+
+petsElements.forEach((el) => {
+  el.addEventListener('click', () => {
+    const { textContent } = el.children[1];
+    const pet = pets.find((el) => el.name === textContent);
+    const {
+      type, breed,
+      description, 
+      age, inoculations, diseases, parasites } = pet;
+
+    imageElement.classList.value = '';
+    imageElement.classList.add('popup-content-image', `${textContent.toLowerCase()}`);
+    titleElement.textContent = textContent;
+    typeElement.textContent = type;
+    breedElement.textContent = breed;
+    detailsElement.textContent = description;
+    ageElement.textContent = age;
+    inoculationsElement.textContent = inoculations.join(', ');
+    diseasesElement.textContent = diseases.join(', ');
+    parasitesElement.textContent = parasites.join(', ');
+
+    popup.classList.remove('hidden');
+  });
+})
+
+document.querySelector('.close-popup').addEventListener('click', () => {
+  popup.classList.add('hidden');
 });
+
+popup.addEventListener('click', ({target}) => {
+  if (target.classList.contains('popup')) {
+    popup.classList.add('hidden');
+  }
+})
 
 left.addEventListener('click', shuffle);
 right.addEventListener('click', shuffle);
